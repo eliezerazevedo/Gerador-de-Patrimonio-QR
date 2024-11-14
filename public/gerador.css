@@ -1,0 +1,28 @@
+/* Body configuration */
+body {
+  width: 10cm;
+  height: 5.5cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Patrimonio number styling - central text */
+.patrimonio-number {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transform: translateY(50px);
+}
+
+/* QR code positioning - bottom right */
+#qrcode {
+  position: absolute;
+  right: 5;
+  bottom: 5;
+}

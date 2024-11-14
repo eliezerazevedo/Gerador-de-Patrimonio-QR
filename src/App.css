@@ -1,0 +1,155 @@
+/* Resetando margens, preenchimentos e box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #151616;
+  justify-content: space-between;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  padding: 0 20px;
+  margin: 0;
+  padding-bottom: 50px; /* Deixe espaço para o rodapé fixo */
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  color: #151616;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o menu de navegação */
+.navbar {
+  background-color: #151616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  border-bottom-left-radius: 8px; /* Canto inferior esquerdo arredondado */
+  border-bottom-right-radius: 8px; /* Canto inferior direito arredondado */
+}
+
+
+.navbar img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #8f8e8e;
+}
+
+/* Responsividade do menu */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+  }
+}
+
+/* Container principal */
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Adiciona espaço abaixo do conteúdo */
+}
+
+/* Estilos para o botão de imprimir */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Input de número */
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #4caf50;
+}
+
+/* Tabela de histórico */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  border-bottom: 2px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+/* Subtítulos */
+h2 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* Imagem responsiva */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
