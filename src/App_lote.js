@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './componentes/Footer';
 import Gerador from './componentes/Gerador';
+import Gerador_lote from './componentes/Gerador_lote'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </div>
       </header>
       <main>
-      <Gerador />   
+      <Gerador_lote />     
       </main>   
       <footer>
         <Footer />
